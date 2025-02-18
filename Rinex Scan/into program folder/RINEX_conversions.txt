@@ -1,0 +1,200 @@
+# RINEX 3.XX 4.XX -> 2.XX TYPE CONVERSION DETAILS:
+# GFZRNX 1.16 Users Guide && http://acc.igs.org/misc/cnvrnx3-rnx2-v3.f
+# https://github.com/ethz-asl/rtklibros/blob/master/src/rinex.c (/* convert obs type code ver.2 -> ver.3 --------------------------------------*/)
+# gamit/lib/sel_obtyp.f
+# LC (RINEX 2.XX) = L2C PHASE ; RINEX 3.05 FORMAT
+# "LC" is the L2C phase, ""SC"" is the L2C S/N
+
+# GPS CODES
+# CODE
+C1C = C1
+C1P = P1
+C1W = P1
+C1Y = P1
+C1M = P1
+C2C = C2
+C2D = C2
+C2X = C2
+C2L = C2
+C2S = C2
+C2P = P2
+C2W = P2
+C2Y = P2
+C2M = P2
+C5I = C5
+C5Q = C5
+C5X = C5
+# PHASE
+L1C = L1
+L1S = L1
+L1L = L1
+L1X = L1
+L1P = L1
+L1W = L1
+L1Y = L1
+L1M = L1
+L1N = L1
+L2C = L2
+L2C = LC
+L2D = L2
+L2S = L2
+L2L = L2
+L2X = L2
+L2P = L2
+L2W = L2
+L2Y = L2
+L2M = L2
+L2N = L2
+L5I = L5
+L5Q = L5
+L5X = L5
+# DOPPLER
+D1C = D1
+D1D = D1
+D1L = D1
+D1X = D1
+D1P = D1
+D1W = D1
+D1Y = D1
+D1M = D1
+D1N = D1
+D2C = D2
+D2D = D2
+D2S = D2
+D2L = D2
+D2X = D2
+D2P = D2
+D2W = D2
+D2Y = D2
+D2M = D2
+D2N = D2
+D5I = D5
+D5Q = D5
+D5X = D5
+# SNR
+S1C = S1
+S1S = S1
+S1L = S1
+S1X = S1
+S1P = S1
+S1W = S1
+S1Y = S1
+S1M = S1
+S1N = S1
+S2C = S2
+S2C = SC
+S2S = S2
+S2S = S2
+S2L = S2
+S2X = S2
+S2P = S2
+S2W = S2
+S2Y = S2
+S2M = S2
+S2N = S2
+S5I = S5
+S5Q = S5
+S5X = S5
+
+# GLONASS CODES
+# CODE
+C1C == C1 
+C1P == P1
+C2C == C2
+C2P == P2
+# PHASE
+L1C == L1 
+L1P == L1
+L2C == L2
+L2P == L2
+# DOPPLER
+D1C == D1
+D1P == D1
+D2C == D2
+D2P == D2
+# SNR
+S1C == S1
+S1P == S1
+S2C == S2
+S2P == S2
+# GALILEO CODES
+# CODE
+C1A == C1
+C1B == C1
+C1C == C1
+C1X == C1
+C1Z == C1
+C5I == C5
+C5Q == C5
+C5X == C5
+C7I == C7
+C7Q == C7
+C7X == C7
+C8I == C8
+C8Q == C8
+C8X == C8
+C6A == C6
+C6B == C6
+C6C == C6
+C6X == C6
+C6Z == C6
+# PHASE
+L1A == L1
+L1B == L1
+L1C == L1
+L1X == L1
+L1Z == L1
+L5I == L5
+L5Q == L5
+L5X == L5
+L7I == L7
+L7Q == L7
+L7X == L7
+L8I == L8
+L8Q == L8
+L8X == L8
+L6A == L6
+L6B == L6
+L6C == L6
+L6X == L6
+L6Z == L6
+# DOPPLER
+D1A == D1
+D1B == D1
+D1C =  D1
+D1X == D1
+D1Z == D1
+D5I == D5
+D5Q == D5
+D5X == D5
+D7I == D7
+D7Q == D7
+D7X == D7
+D8I == D8
+D8Q == D8
+D8X == D8
+D6A == D6
+D6B == D6
+D6C == D6
+D6X == D6
+D6Z == D6
+# SNR
+S1A == S1
+S1B == S1
+S1C == S1
+S1X == S1
+S1Z == S1
+S5I == S5
+S5Q == S5
+S5X == S5
+S7I == S7
+S7Q == S7
+S7X == S7
+S8I == S8
+S8Q == S8
+S8X == S8
+S6A == S6
+S6B == S6
+S6C == S6
+S6X == S6
+S6Z == S6
