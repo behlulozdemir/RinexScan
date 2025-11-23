@@ -607,7 +607,7 @@ namespace Rinex_Scan
                             }
                             if (radioButton2.Checked)
                             {
-                                for (int i = 0; i < satelliteCount; i++)
+                                for (int i = 0; i <= satelliteCount; i++) // it was < where it should be <=, fixed.
                                 {
                                     string satelliteDataLine = reader.ReadLine();
                                     if (bytesRead % 10000 == 0)
