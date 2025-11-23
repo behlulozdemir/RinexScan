@@ -17,6 +17,7 @@ namespace Rinex_Scan
 {
     public partial class Form1 : Form
     {
+        //There is a small bug that counts -1 for satellites, it will be fixed soon
         public bool resultsSaved = false;
         public bool processDone = false;
         public static atxProcessor atxProcessor = new atxProcessor();
